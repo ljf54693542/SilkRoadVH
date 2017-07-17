@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:fresco="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/img_sdv"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@color/transparent"
+        fresco:actualImageScaleType="focusCrop"
+        fresco:fadeDuration="300"
+        fresco:failureImage="@mipmap/default_img"
+        fresco:failureImageScaleType="focusCrop"
+        fresco:placeholderImage="@mipmap/default_img"
+        fresco:placeholderImageScaleType="focusCrop"/>
+
+    <include layout="@layout/partline_view"/>
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/margin_8dp"
+        android:paddingLeft="@dimen/base_margin"
+        android:paddingRight="@dimen/base_margin"
+        android:paddingTop="@dimen/margin_8dp"
+        android:text="酒店介绍"
+        android:textColor="@color/text_color_black"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/infor_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/margin_8dp"
+        android:paddingLeft="@dimen/base_margin"
+        android:paddingRight="@dimen/base_margin"
+        android:textColor="@color/text_color_gray"
+        android:textSize="12sp"/>
+
+    <include layout="@layout/partline_view"/>
+
+</LinearLayout>

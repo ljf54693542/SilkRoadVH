@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/base_margin"
+        android:text="收货人信息"
+        android:textColor="@color/text_color_black"
+        android:textSize="16sp"/>
+
+    <include layout="@layout/partline_line"/>
+
+    <include layout="@layout/order_confirm_head"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/base_margin"
+        android:text="订单信息"
+        android:textColor="@color/text_color_black"
+        android:textSize="16sp"/>
+
+    <include layout="@layout/partline_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/base_margin">
+
+        <TextView
+            android:id="@+id/order_detail_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="8dp"
+            android:paddingLeft="@dimen/base_margin"
+            android:paddingRight="@dimen/base_margin"
+            android:paddingTop="8dp"
+            android:text="订单编号:123455623265412"
+            android:textColor="@color/text_color_gray"
+            android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/order_detail_num_copy"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingBottom="8dp"
+            android:paddingLeft="@dimen/base_margin"
+            android:paddingRight="@dimen/base_margin"
+            android:paddingTop="8dp"
+            android:text="复制"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/order_detail_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:paddingLeft="@dimen/base_margin"
+        android:paddingRight="@dimen/base_margin"
+        android:paddingTop="8dp"
+        android:text="下单时间:2017-06-20  18:45:22"
+        android:textColor="@color/text_color_gray"
+        android:textSize="14sp"/>
+
+
+    <TextView
+        android:id="@+id/order_detail_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:paddingLeft="@dimen/base_margin"
+        android:paddingRight="@dimen/base_margin"
+        android:paddingTop="8dp"
+        android:text="订单状态：卖家已发货"
+        android:textColor="@color/text_color_gray"
+        android:textSize="14sp"/>
+
+    <include layout="@layout/partline_view"/>
+
+    <TextView
+        android:id="@+id/order_detail_shopname"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/base_margin"
+        android:text="店家名字"
+        android:textColor="@color/text_color_black"
+        android:textSize="16sp"/>
+
+    <include layout="@layout/partline_line"/>
+
+</LinearLayout>

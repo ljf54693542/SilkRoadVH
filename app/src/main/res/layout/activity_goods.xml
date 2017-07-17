@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.rongshoo.silkroadvh.Activity.GoodsActivity">
+
+    <include layout="@layout/titlebar_cart"/>
+
+    <include layout="@layout/partline_line"/>
+
+    <LinearLayout
+        android:id="@+id/shop_all_lin"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/store_list_all_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="全部"
+            android:textColor="@drawable/goods_textcolor_selector"
+            android:textSize="15sp"/>
+
+        <Button
+            android:id="@+id/store_list_num_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="销量"
+            android:textColor="@drawable/goods_textcolor_selector"
+            android:textSize="15sp"/>
+
+
+        <Button
+            android:id="@+id/store_list_price_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="价格"
+            android:textColor="@drawable/goods_textcolor_selector"
+            android:textSize="15sp"/>
+
+        <Button
+            android:id="@+id/store_list_fresh_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="品牌"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <include layout="@layout/partline_line"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:id="@+id/close_v"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+</LinearLayout>

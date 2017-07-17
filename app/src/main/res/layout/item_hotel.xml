@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:fresco="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:paddingBottom="@dimen/margin_8dp"
+              android:paddingLeft="@dimen/base_margin"
+              android:paddingRight="@dimen/base_margin"
+              android:paddingTop="8dp">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/avatar_sdv"
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        android:layout_marginRight="@dimen/base_margin"
+        android:background="@color/transparent"
+        fresco:actualImageScaleType="focusCrop"
+        fresco:fadeDuration="300"
+        fresco:failureImage="@mipmap/default_img"
+        fresco:failureImageScaleType="focusCrop"
+        fresco:placeholderImage="@mipmap/default_img"
+        fresco:placeholderImageScaleType="focusCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="豪华景观房豪华景观房豪华景观房豪华景观房豪华景观房豪华景观房豪华景观房豪华景观房"
+            android:textColor="@color/text_color_black"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/infor_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="我是简介我是简介我是简介我是简介我是我是简介我是简介我是简介我是简介我是简介我是简介我是简介我是简介我是简介我是简介我是简介我是简介我是简介我是简介我是简介我是简介"
+            android:textColor="@color/text_color_gray"
+            android:textSize="12sp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/price_tv"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:text="69"
+                android:textColor="@color/yellow_hotel"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/go_buy_tv"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:background="@color/yellow_hotel"
+                android:gravity="center"
+                android:text="立即预订"
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

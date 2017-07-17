@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:fresco="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:padding="@dimen/base_margin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6/24"
+        android:textColor="@color/text_color_gray"
+        android:textSize="14sp"
+        android:layout_marginRight="@dimen/base_margin"/>
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/avatar_sdv"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginRight="@dimen/base_margin"
+        android:background="@color/transparent"
+        fresco:actualImageScaleType="focusCrop"
+        fresco:fadeDuration="300"
+        fresco:failureImage="@mipmap/default_img"
+        fresco:failureImageScaleType="focusCrop"
+        fresco:placeholderImage="@mipmap/default_img"
+        fresco:placeholderImageScaleType="focusCrop"/>
+
+    <TextView
+        android:id="@+id/content_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="新疆特产西域精选超大坚果组合套装零食新疆特产西域精选超大坚果组合套装零食"
+        android:textColor="@color/text_color_black"
+        android:textSize="14sp"/>
+
+</LinearLayout>

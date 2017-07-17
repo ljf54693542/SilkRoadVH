@@ -1,0 +1,231 @@
+{
+  "data": [
+    {
+      "name": "新疆水果店",
+      "yfText": "EMS￥30",
+      "istate": 0,
+      "yf": [
+        {
+          "name": "快递￥12",
+          "isCheck": false
+        },
+        {
+          "name": "EMS￥30",
+          "isCheck": true
+        },
+        {
+          "name": "顺丰￥20",
+          "isCheck": false
+        }
+      ]
+    },
+    {
+      "name": "新疆水果店",
+      "yfText": "快递￥12",
+      "istate": 0,
+      "yf": [
+        {
+          "name": "快递￥12",
+          "isCheck": true
+        },
+        {
+          "name": "EMS￥30",
+          "isCheck": false
+        },
+        {
+          "name": "顺丰￥20",
+          "isCheck": false
+        }
+      ]
+    },
+    {
+      "name": "黑水河烤鸭店",
+      "yfText": "顺丰￥20",
+      "istate": 2,
+      "yf": [
+        {
+          "name": "快递￥12",
+          "isCheck": false
+        },
+        {
+          "name": "EMS￥30",
+          "isCheck": false
+        },
+        {
+          "name": "顺丰￥20",
+          "isCheck": true
+        }
+      ]
+    },
+    {
+      "name": "闻人羽武器店",
+      "yfText": "快递￥12",
+      "istate": 3,
+      "yf": [
+        {
+          "name": "快递￥12",
+          "isCheck": true
+        },
+        {
+          "name": "EMS￥30",
+          "isCheck": false
+        },
+        {
+          "name": "顺丰￥20",
+          "isCheck": false
+        }
+      ]
+    },
+    {
+      "name": "百里屠苏服装店",
+      "yfText": "顺丰￥20",
+      "istate": 4,
+      "yf": [
+        {
+          "name": "快递￥12",
+          "isCheck": false
+        },
+        {
+          "name": "EMS￥30",
+          "isCheck": false
+        },
+        {
+          "name": "顺丰￥20",
+          "isCheck": true
+        }
+      ]
+    },
+    {
+      "name": "芒果店",
+      "yfText": "EMS￥30",
+      "istate": 5,
+      "yf": [
+        {
+          "name": "快递￥12",
+          "isCheck": false
+        },
+        {
+          "name": "EMS￥30",
+          "isCheck": true
+        },
+        {
+          "name": "顺丰￥20",
+          "isCheck": false
+        }
+      ]
+    },
+    {
+      "name": "咖啡店",
+      "yfText": "快递￥12",
+      "istate": 6,
+      "yf": [
+        {
+          "name": "快递￥12",
+          "isCheck": true
+        },
+        {
+          "name": "EMS￥30",
+          "isCheck": false
+        },
+        {
+          "name": "顺丰￥20",
+          "isCheck": false
+        }
+      ]
+    },
+    {
+      "name": "新疆大馕",
+      "yfText": "快递￥12",
+      "istate": 1,
+      "yf": [
+        {
+          "name": "快递￥12",
+          "isCheck": true
+        },
+        {
+          "name": "EMS￥30",
+          "isCheck": false
+        },
+        {
+          "name": "顺丰￥20",
+          "isCheck": false
+        }
+      ]
+    },
+    {
+      "name": "珠宝店",
+      "istate": 5,
+      "yfText": "EMS￥30",
+      "yf": [
+        {
+          "name": "快递￥12",
+          "isCheck": false
+        },
+        {
+          "name": "EMS￥30",
+          "isCheck": true
+        },
+        {
+          "name": "顺丰￥20",
+          "isCheck": false
+        }
+      ]
+    },
+    {
+      "name": "干枣店",
+      "yfText": "快递￥12",
+      "istate": 6,
+      "yf": [
+        {
+          "name": "快递￥12",
+          "isCheck": true
+        },
+        {
+          "name": "EMS￥30",
+          "isCheck": false
+        },
+        {
+          "name": "顺丰￥20",
+          "isCheck": false
+        }
+      ]
+    },
+    {
+      "name": "日用百货",
+      "yfText": "快递￥12",
+      "yf": [
+        {
+          "name": "快递￥12",
+          "isCheck": true
+        },
+        {
+          "name": "EMS￥30",
+          "isCheck": false
+        },
+        {
+          "name": "顺丰￥20",
+          "isCheck": false
+        }
+      ]
+    },
+    {
+      "name": "日用百货",
+      "yfText": "快递￥12",
+      "istate": 3,
+      "yf": [
+        {
+          "name": "快递￥12",
+          "isCheck": true
+        },
+        {
+          "name": "EMS￥30",
+          "isCheck": false
+        },
+        {
+          "name": "顺丰￥20",
+          "isCheck": false
+        }
+      ]
+    }
+  ]
+}

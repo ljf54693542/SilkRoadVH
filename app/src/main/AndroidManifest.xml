@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.rongshoo.silkroadvh">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+
+    <!-- 用于开启 debug 版本的应用在6.0 系统上 层叠窗口权限 -->
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+
+        <activity android:name=".Activity.StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity">
+        </activity>
+        <activity android:name=".Activity.LoginActivity">
+        </activity>
+        <activity android:name=".Activity.PersonalInforActivity">
+        </activity>
+        <activity android:name=".Activity.SortActivity">
+        </activity>
+        <activity
+            android:name=".Activity.GoodsActivity"
+            android:launchMode="singleTask">
+        </activity>
+        <activity
+            android:name=".Activity.GoodsDetailActivity"
+            android:launchMode="singleTask">
+        </activity>
+        <activity
+            android:name=".Activity.GoodsShopActivity"
+            android:launchMode="singleTask">
+        </activity>
+        <activity android:name=".Activity.OrderConfirmActivity">
+        </activity>
+        <activity android:name=".Activity.OrderAllActivity">
+        </activity>
+        <activity
+            android:name=".Activity.OrderDetailActivity"
+            android:launchMode="singleTask">
+        </activity>
+        <activity android:name=".Activity.MineAttentionActivity">
+        </activity>
+        <activity android:name=".Activity.MineCollectedActivity">
+        </activity>
+        <activity android:name=".Addr.AddrActivity">
+        </activity>
+        <activity android:name=".Addr.AddrChoiceActivity">
+        </activity>
+        <activity android:name=".Activity.MineInforActivity">
+        </activity>
+        <activity android:name=".Activity.ShopListActivity">
+        </activity>
+        <activity
+            android:name=".Activity.ShopCateActivity"
+            android:launchMode="singleTask">
+        </activity>
+        <activity android:name=".Activity.ShopCateDetailActivity">
+        </activity>
+        <activity android:name=".Activity.MineTalksActivity">
+        </activity>
+        <activity android:name=".Activity.HotelActivity">
+        </activity>
+        <activity android:name=".Activity.HotelRoomDetailActivity">
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#38c4b7</color>
+    <color name="colorPrimaryDark">#38c4b7</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="nav_text_green">#56b83c</color>
+    <color name="nav_text_gray">#949494</color>
+    <color name="transparent">#00000000</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="partline_gray">#e5e5e5</color>
+    <color name="partline_space">#f6f6f6</color>
+    <color name="white">#fff</color>
+    <color name="progress_green">#56b83c</color>
+    <color name="base_blue">#05afed</color>
+    <color name="less_blue">#84defe</color>
+    <color name="base_blue_dark">#05a0d9</color>
+    <color name="orange">#ff8040</color>
+    <!-- 字体颜色-->
+    <color name="text_color_black">#333333</color>
+    <color name="text_color_gray">#666666</color>
+    <color name="text_color_gray_less">#9d9d9d</color>
+    <color name="text_color_red">#ff5c4c</color>
+    <color name="main_red_text">#e53e42</color>
+
+    <!-- 底部弹窗-->
+    <color name="actionsheet_gray">#8F8F8F</color>
+    <color name="actionsheet_blue">#56c5ef</color>
+
+    <!--图标-->
+    <color name="abate_icon_color">#bbbbbb</color>
+    <color name="default_icon_color">#999999</color>
+    <color name="pressed_icon_color">#fe5a00</color>
+    <color name="yellow_hotel">#ffb30c</color>
+    <!--购物车-->
+    <color name="background_color">#f6f6f6</color>
+    <color name="text_orange">#f66b05</color>
+    <drawable name="color_blue">#38c4b7</drawable>
+    <drawable name="color_black">#333333</drawable>
+    <drawable name="color_white">#ffffff</drawable>
+    <drawable name="yellow_hotel">#ffb30c</drawable>
+    <drawable name="gray_hotel">#f6f6f6</drawable>
+    <drawable name="text_gray">#666666</drawable>
+</resources>

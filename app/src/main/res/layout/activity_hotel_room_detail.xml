@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.rongshoo.silkroadvh.Activity.HotelRoomDetailActivity">
+
+    <include layout="@layout/toolbar_back_white"/>
+
+    <include layout="@layout/partline_line"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="336dp"/>
+
+            <include layout="@layout/partline_line"/>
+
+            <TextView
+                android:id="@+id/goods_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_8dp"
+                android:layout_marginLeft="@dimen/base_margin"
+                android:layout_marginRight="@dimen/base_margin"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="新疆民族特色衣服 维吾尔族男士纯绵绸短袖T恤阿依古扎丽夏季男士"
+                android:textColor="@color/text_color_black"
+                android:textSize="16sp"/>
+
+
+            <include layout="@layout/partline_view"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/room_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"/>
+
+            <LinearLayout
+                android:id="@+id/choice_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <View
+                    android:id="@+id/choice_part_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@color/partline_gray"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/choice_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/base_margin"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/partline_view"/>
+
+            <TextView
+                android:id="@+id/appraise_num_tv"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="@dimen/base_margin"
+                android:layout_marginRight="@dimen/base_margin"
+                android:gravity="center_vertical"
+                android:text="商品评价"/>
+
+            <include layout="@layout/partline_line"/>
+
+            <LinearLayout
+                android:id="@+id/appraise_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="16dp"
+                android:paddingLeft="@dimen/base_margin"
+                android:paddingRight="@dimen/base_margin"
+                android:paddingTop="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/avatar_sdv"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        fresco:actualImageScaleType="focusCrop"
+                        fresco:fadeDuration="300"
+                        fresco:failureImage="@mipmap/default_img"
+                        fresco:failureImageScaleType="focusCrop"
+                        fresco:placeholderImage="@mipmap/default_img"
+                        fresco:placeholderImageScaleType="focusCrop"
+                        fresco:roundAsCircle="true"/>
+
+                    <TextView
+                        android:id="@+id/name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="Admin"
+                        android:textColor="@color/text_color_gray"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/content_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="非常漂亮的民族服装。质量，款式，价格都非常合理。值得推广。"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="2017-06-24"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/appraise_all_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/goods_detail_shape"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="4dp"
+                    android:text="查看所有评价"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/partline_view"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginRight="@dimen/base_margin">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/addr_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:paddingLeft="@dimen/base_margin"
+                        android:paddingRight="@dimen/base_margin"
+                        android:paddingTop="@dimen/base_margin"
+                        android:text="地址：新疆维吾尔自治区乌鲁木齐市集散中心2F102"
+                        android:textColor="@color/text_color_gray_less"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/phone_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:paddingBottom="@dimen/base_margin"
+                        android:paddingLeft="@dimen/base_margin"
+                        android:paddingRight="@dimen/base_margin"
+                        android:paddingTop="@dimen/margin_6dp"
+                        android:text="电话：012-2565623"
+                        android:textColor="@color/text_color_gray_less"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/call_img"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@mipmap/ic_shop_call"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/partline_view"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="@dimen/base_margin"
+                android:layout_marginRight="@dimen/base_margin"
+                android:gravity="center_vertical"
+                android:text="商品详情"
+                android:textColor="@color/text_color_black"
+                android:textSize="14sp"/>
+
+
+            <include layout="@layout/partline_line"/>
+
+            <WebView
+                android:id="@+id/web"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/base_margin"/>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:id="@+id/goods_shop_msg_ll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/tab_img"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginRight="4dp"
+                android:src="@mipmap/ic_shop_msg"/>
+
+            <TextView
+                android:id="@+id/goods_shop_msg_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="联系店家"
+                android:textColor="@color/text_color_gray_less"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/go_buy_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/yellow_hotel"
+            android:gravity="center"
+            android:text="立即预订"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+</LinearLayout>

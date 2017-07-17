@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/order_detail_goods_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:paddingBottom="4dp"
+        android:paddingLeft="@dimen/base_margin"
+        android:paddingRight="@dimen/base_margin"
+        android:paddingTop="4dp"
+        android:text="共3件商品"
+        android:textColor="@color/text_color_gray"
+        android:textSize="14sp"/>
+
+
+    <TextView
+        android:id="@+id/order_price_goods_sum_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:paddingBottom="4dp"
+        android:paddingLeft="@dimen/base_margin"
+        android:paddingRight="@dimen/base_margin"
+        android:paddingTop="4dp"
+        android:text="商品总价：185*3"
+        android:textColor="@color/text_color_gray"
+        android:textSize="14sp"/>
+
+
+    <TextView
+        android:id="@+id/order_price_carriage_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:paddingBottom="4dp"
+        android:paddingLeft="@dimen/base_margin"
+        android:paddingRight="@dimen/base_margin"
+        android:paddingTop="4dp"
+        android:text="运费：EMS20"
+        android:textColor="@color/text_color_gray"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/order_price_sum_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:paddingBottom="4dp"
+        android:paddingLeft="@dimen/base_margin"
+        android:paddingRight="@dimen/base_margin"
+        android:paddingTop="4dp"
+        android:text="合计：185*3+20"
+        android:textColor="@color/text_color_black"
+        android:textSize="14sp"/>
+
+    <include layout="@layout/partline_line"/>
+
+</LinearLayout>

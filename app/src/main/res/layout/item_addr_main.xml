@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:id="@+id/item_addr_main_name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="周瑜"
+            android:textColor="@color/text_color_black"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/item_addr_main_phonenum_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="13628040460"
+            android:textColor="@color/text_color_black"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item_addr_main_addr_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:lineSpacingExtra="3dp"
+        android:maxLines="2"
+        android:text="四川省成都市郫县西区大道尚雅路8号尚景峰四川省成都市郫县西区大道尚雅路8号尚景峰"
+        android:textColor="@color/text_color_black"
+        android:textSize="14sp"/>
+
+    <include layout="@layout/partline_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="12dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="12dp">
+
+
+        <ImageView
+            android:id="@+id/item_addr_main_default_iv"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginRight="4dp"
+            android:background="@null"
+            android:src="@drawable/ic_addr_defualt" />
+
+        <TextView
+            android:id="@+id/item_addr_main_default_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="默认地址"
+            android:textColor="@color/text_color_gray"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/item_addr_main_edit_iv"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginRight="4dp"
+            android:background="@null"
+            android:src="@drawable/ic_addr_edit"/>
+
+        <TextView
+            android:id="@+id/item_addr_main_edit_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="32dp"
+            android:text="编辑"
+            android:textColor="@color/text_color_gray"
+            android:textSize="13sp"/>
+
+        <ImageView
+            android:id="@+id/item_addr_main_del_iv"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginRight="4dp"
+            android:background="@null"
+            android:src="@drawable/ic_addr_del"/>
+
+        <TextView
+            android:id="@+id/item_addr_main_del_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="删除"
+            android:textColor="@color/text_color_gray"
+            android:textSize="13sp"/>
+    </LinearLayout>
+
+</LinearLayout>

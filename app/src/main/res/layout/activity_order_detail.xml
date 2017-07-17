@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.rongshoo.silkroadvh.Activity.OrderDetailActivity">
+
+    <include layout="@layout/toolbar_back_white"/>
+
+    <include layout="@layout/partline_line"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:id="@+id/status_ll"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:gravity="center_vertical|right"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="@dimen/base_margin"
+        android:paddingRight="@dimen/base_margin"
+        android:paddingTop="8dp">
+        <TextView
+            android:id="@+id/paytime_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="付款时间：\n 2017-02-18 19:02"
+            android:gravity="left|center_vertical"
+            android:textColor="@color/text_color_gray"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/status_left_tv"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="24dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="查看物流"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/textSize_14sp"/>
+
+        <TextView
+            android:id="@+id/status_right_tv"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/order_list_text_shape"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="确认收货"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_14sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

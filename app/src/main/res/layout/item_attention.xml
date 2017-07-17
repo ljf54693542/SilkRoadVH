@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:fresco="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+              android:orientation="horizontal"
+              android:padding="@dimen/base_margin">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/avatar_sdv"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="@dimen/base_margin"
+        android:background="@color/transparent"
+        fresco:actualImageScaleType="focusCrop"
+        fresco:fadeDuration="300"
+        fresco:failureImage="@mipmap/default_img"
+        fresco:failureImageScaleType="focusCrop"
+        fresco:placeholderImage="@mipmap/default_img"
+        fresco:placeholderImageScaleType="focusCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="新疆水果"
+            android:textColor="@color/text_color_black"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/infor_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="新疆特产西域精选超大坚果组合套装零食"
+            android:textColor="@color/text_color_gray"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/cancel_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/base_margin"
+        android:background="@color/partline_space"
+        android:text="取消关注"
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:textColor="@color/text_color_gray"
+        android:textSize="12sp"/>
+
+</LinearLayout>

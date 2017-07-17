@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:fresco="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/root_ll"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/transparent"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/avatar"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        fresco:actualImageScaleType="focusCrop"
+        fresco:fadeDuration="300"
+        fresco:failureImage="@mipmap/default_img"
+        fresco:failureImageScaleType="focusCrop"
+        fresco:placeholderImage="@mipmap/default_img"
+        fresco:placeholderImageScaleType="focusCrop"/>
+
+    <TextView
+        android:id="@+id/name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="新疆丝路印象餐厅"
+        android:textColor="@color/text_color_black"
+        android:textSize="14sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/price_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:text="69"
+            android:textColor="@color/text_orange"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/price_qi_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:text="起"
+            android:textColor="@color/text_orange"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/avgprice_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:text="/人均50"
+            android:textColor="@color/text_color_gray_less"
+            android:textSize="12sp"
+            android:visibility="gone"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/sales_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:text="销量50"
+            android:textColor="@color/text_color_gray_less"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+

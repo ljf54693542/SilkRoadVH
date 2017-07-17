@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:fresco="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/mine_head_sdv"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            fresco:actualImageScaleType="focusCrop"
+            fresco:fadeDuration="300"
+            fresco:failureImage="@mipmap/ic_head_default"
+            fresco:failureImageScaleType="focusCrop"
+            fresco:placeholderImage="@mipmap/ic_head_default"
+            fresco:placeholderImageScaleType="focusCrop"
+            fresco:roundAsCircle="true"
+            fresco:roundingBorderColor="#8ae4d1"
+            fresco:roundingBorderWidth="2dp"/>
+
+        <TextView
+            android:id="@+id/mine_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:text="Admin"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="6dp"
+        android:paddingTop="2dp"
+        android:weightSum="4">
+
+
+        <LinearLayout
+            android:id="@+id/mine_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_mine_pay"
+                    android:padding="2dp"/>
+
+                <TextView
+                    android:id="@+id/mine_pay_msg"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="top|right"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/text_red_shape"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_12sp"/>
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mine_obligation"
+                android:textColor="@color/text_color_black"
+                android:textSize="14sp"
+                android:paddingBottom="6dp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/mine_transport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_mine_transport"
+                    android:padding="2dp"/>
+
+                <TextView
+                    android:id="@+id/mine_transport_msg"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="top|right"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/text_red_shape"
+                    android:gravity="center"
+                    android:text="99"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_12sp"
+                   />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mine_transport"
+                android:textColor="@color/text_color_black"
+                android:textSize="14sp"
+                android:paddingBottom="6dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mine_order_share"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_mine_order_share"/>
+
+                <TextView
+                    android:id="@+id/mine_order_share_msg"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="top|right"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/text_red_shape"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_12sp"/>
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mine_order_share"
+                android:textColor="@color/text_color_black"
+                android:textSize="14sp"
+                android:paddingBottom="6dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mine_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_mine_order"
+                android:padding="2dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mine_order"
+                android:textColor="@color/text_color_black"
+                android:textSize="14sp"
+                android:paddingBottom="6dp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <include layout="@layout/partline_view"/>
+</LinearLayout>
